@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아산시 투자유치 성과 분석 및 논산시 시사점 보고</title>
+    <style>
+        /* 기본 설정 */
+        body {
+            font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
+            background-color: #f0f2f5;
+            color: #222;
+            line-height: 1.6;
+            padding: 30px 15px;
+            margin: 0;
+        }
+
+        /* 전체 컨테이너 */
+        .report-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* 메인 타이틀 영역 */
+        .header-section {
+            background-color: #0f4c81;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header-section h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .header-section p {
+            margin: 10px 0 0 0;
+            font-size: 16px;
+            color: #d1e8ff;
+        }
+
+        /* 단락(카드) 디자인 */
+        .card {
+            background: #ffffff;
+            padding: 35px 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 5px solid transparent;
+        }
+        
+        /* 섹션별 포인트 컬러 지정 */
+        .card.section-1 { border-top-color: #e53e3e; }
+        .card.section-2 { border-top-color: #3182ce; }
+        .card.section-3 { border-top-color: #38a169; }
+
+        /* 섹션 제목 */
+        .card h2 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #1a202c;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #edf2f7;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* 리스트 스타일링 */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 18px;
+            font-size: 17px;
+            color: #4a5568;
+        }
+        li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #cbd5e0;
+            font-size: 12px;
+        }
+
+        /* 강조 텍스트 (글자 굵기 및 형광펜 효과) */
+        .point-title {
+            display: block;
+            font-size: 19px;
+            font-weight: 800;
+            color: #2d3748;
+            margin-bottom: 6px;
+        }
+        .marker-yellow {
+            background: linear-gradient(to top, #fef08a 40%, transparent 40%);
+            font-weight: 800;
+            color: #111;
+        }
+        .marker-blue {
+            background: linear-gradient(to top, #bfdbfe 40%, transparent 40%);
+            font-weight: 800;
+            color: #111;
+        }
+        .marker-green {
+            background: linear-gradient(to top, #bbf7d0 40%, transparent 40%);
+            font-weight: 800;
+            color: #111;
+        }
+        
+        /* 뱃지 스타일 */
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 8px;
+            background-color: #edf2f7;
+            color: #4a5568;
+        }
+
+        /* 원문 기사 링크 버튼 스타일 */
+        .source-section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .source-btn {
+            display: inline-block;
+            background-color: #2b6cb0;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 17px;
+            font-weight: 800;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(43, 108, 176, 0.25);
+            transition: all 0.3s ease;
+        }
+        .source-btn:hover {
+            background-color: #1a365d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(43, 108, 176, 0.35);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="report-wrapper">
+        
+        <!-- 타이틀 -->
+        <div class="header-section">
+            <h1>아산시 투자유치 성과 분석 및 논산시 시사점</h1>
+            <p>타 지자체 대규모 유치 성공 사례를 통한 전략적 벤치마킹 보고</p>
+        </div>
+
+        <!-- Section 1: 성과 요약 -->
+        <div class="card section-1">
+            <h2>🎯 1. 아산시 투자유치 핵심 성과</h2>
+            <ul>
+                <li>
+                    <span class="point-title">투자의향서(MOU) 체결 및 고용 창출</span>
+                    원익IPS, 씨앤엠, 에이티이엔지 등 3개 사로부터 <span class="marker-yellow">총 260억 원 투자</span> 및 <span class="marker-yellow">285명 신규 고용</span> 확보
+                </li>
+                <li>
+                    <span class="point-title">대규모 투자 모멘텀 활용</span>
+                    삼성디스플레이·삼성전자 113조 원 투자 발표를 기회로, 첨단기업 선제 유치를 위한 <span class="marker-blue">서울 현지 설명회 개최</span>
+                </li>
+                <li>
+                    <span class="point-title">13개 기관 협력망 구축</span>
+                    입지, 주거, 금융 관련 기관과 <strong>'상생협력 지원투자 협약'</strong> 체결을 통한 원스톱 패스트트랙 지원망 완성
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 2: 성공 요인 -->
+        <div class="card section-2">
+            <h2>💡 2. 핵심 성공 요인 분석</h2>
+            <ul>
+                <li>
+                    <span class="point-title"><span class="badge">요인 1</span>앵커 기업 낙수효과 극대화 타기팅</span>
+                    삼성이라는 확실한 앵커를 내세워, 밸류체인 내 공급망(벤더사)들을 집중 공략한 타깃 영업 주효
+                </li>
+                <li>
+                    <span class="point-title"><span class="badge">요인 2</span>기업 '페인포인트' 민관 합동 통합 해결</span>
+                    기업의 최대 고민인 <span class="marker-yellow">직원 정주 여건(주거), 자금 조달, 부지 확보</span>를 지자체 단독이 아닌 다자간 협약으로 패키지화하여 제공
+                </li>
+                <li>
+                    <span class="point-title"><span class="badge">요인 3</span>지휘부의 공격적이고 신속한 세일즈 행정</span>
+                    시장이 직접 프레젠테이션 진행, 3일 내 감사 메일 발송 및 전 과정 밀착 지원 약속으로 강한 행정 신뢰 부여
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3: 논산시 시사점 -->
+        <div class="card section-3">
+            <h2>🚀 3. 논산시 투자유치 적용 방안 (시사점)</h2>
+            <ul>
+                <li>
+                    <span class="point-title"><span class="badge">전략 1</span>'국방국가산단' 중심의 앵커 연계 마케팅</span>
+                    국방국가산업단지와 국방 클러스터를 앵커로 삼아, 방산 대기업 1·2차 협력사를 정밀 타기팅하는 맞춤형 유치 논리 개발 필요
+                </li>
+                <li>
+                    <span class="point-title"><span class="badge">전략 2</span>'정주 여건 + 금융' 결합형 인센티브 패키지 기획</span>
+                    기숙사 지원금(20명, 최대 5억 원) 등 근로자 정주 여건 개선안에 지역 금융권 저리 대출 등을 엮어 <span class="marker-green">"논산행 = 인프라+복지 풀패키지"</span> 전략 수립
+                </li>
+                <li>
+                    <span class="point-title"><span class="badge">전략 3</span>방산 특화 지역 대상 '아웃바운드 IR' 추진</span>
+                    방산 강소기업이 밀집한 대덕특구나 수도권을 대상으로 지휘부가 직접 찾아가는 적극적인 투자설명회 기획 검토
+                </li>
+            </ul>
+        </div>
+
+        <!-- 원문 기사 바로가기 버튼 -->
+        <div class="source-section">
+            <!-- 알려주신 원문 기사 URL 적용 완료 -->
+            <a href="https://www.businessjournal.co.kr/news/articleView.html?idxno=1029" target="_blank" class="source-btn">
+                🔗 비즈니스저널 원문 기사 바로가기
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
